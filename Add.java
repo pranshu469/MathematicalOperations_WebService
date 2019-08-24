@@ -2,12 +2,10 @@ package log4jdemo;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.InputMismatchException;
-import org.apache.log4j.*;
 
 public class Add 
 {
     static int x1=0,y1=0,z1=0,exc=0;
-    private static final Logger logger=Logger.getLogger(Log4jDemo.class.getName());
     public void add() throws FileNotFoundException, IOException
     {
         System.out.println("enter 2 operands");
