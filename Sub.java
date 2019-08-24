@@ -1,7 +1,6 @@
 package log4jdemo;
 import java.io.IOException;
 import java.util.InputMismatchException;
-import org.apache.log4j.Logger;
 
 public class Sub 
 {
