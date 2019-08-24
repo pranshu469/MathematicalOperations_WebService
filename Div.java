@@ -1,11 +1,9 @@
 package log4jdemo;
 import java.io.IOException;
 import java.util.InputMismatchException;
-import org.apache.log4j.Logger;
 
 public class Div 
 {
-    private static final Logger logger=Logger.getLogger(Log4jDemo.class.getName());
      static int x1=0,y1=0,z1=0,exc=0;
     public void div() throws IOException
     {
@@ -29,7 +27,7 @@ public class Div
             }
             else
             {
-                logger.error("denominator can not be zero");
+               System.out.println("denominator can not be zero");
             }
         }
         else
