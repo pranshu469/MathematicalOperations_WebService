@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.InputMismatchException;
 import java.util.Properties;
-import org.apache.log4j.*;
 import java.util.Scanner;
 
 
@@ -14,7 +13,6 @@ public class Log4jDemo
     static Scanner sc;
     
     //static String path="C:\\Users\\Pranshu\\Documents\\NetBeansProjects\\13-06-19\\Log4jDemo\\src\\Log4jDemo.properties";
-    private static final Logger logger=Logger.getLogger(Log4jDemo.class.getName());
     static Properties p;
     static int a;
     
@@ -25,7 +23,6 @@ public class Log4jDemo
         System.out.println("enter the name of properties file");
          
         String path="C:\\Users\\Pranshu\\Documents\\NetBeansProjects\\13-06-19\\Log4jDemo\\src\\"+sc.nextLine()+".properties";   
-        PropertyConfigurator.configure(path);
         
         Add obj1=new Add();
         Sub obj2=new Sub();
@@ -55,30 +52,25 @@ public class Log4jDemo
                 }     
                 if(a==10)
                 {
-                    logger.warn("warning exiting");
                      break;
                 }
             
                 if(a==1)
                 {
-                    logger.info("info add");
                     obj1.add();
                 }
                 if(a==2)
                 {
-                    logger.info("info sub");
                     obj2.sub();
                 }
             
                 if(a==3)
                 {
-                    logger.info("info mul");
                     obj3.mul();
                 }
             
                 if(a==4)
                 {   
-                    logger.info("info divide");
                     obj5.div();
                 }
                 if(a==0)
@@ -88,7 +80,6 @@ public class Log4jDemo
                     System.out.println("3.  MUL");
                     System.out.println("4.  DIV");
                     System.out.println("10.  EXIT");
-                    logger.info("information");
                 }
            
         }
