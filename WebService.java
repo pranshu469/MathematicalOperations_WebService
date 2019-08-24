@@ -24,7 +24,7 @@ public class WebService
         {paramX=Div.x1;paramY=Div.y1;action="div";}
             
         try {
-            
+            	//change the uri after running  MathematicalOperationsRestWebService
 		URL url = new URL("http://localhost:8084/RestJson_2//generic");
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setDoOutput(true);
